@@ -14,25 +14,33 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body class="body-web">
-    <header class="header-web">
-      <a href="index.html" class="header-logo">Web<span>Studio</span></a>
-      <nav class="header-nav" aria-label="Основна навігація">
-        <ul class="header-list">
-          <li class="list-item"><a class="list-link" href="#">Студія</a></li>
-          <li class="list-item">
-            <a class="list-link" href="portfolio.html">Портфоліо</a>
+    <header class="header">
+      <a href="./index.html" class="header-logo"
+        ><img src="./src/logo/WebStudio1.svg" alt="logo"
+      /></a>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="./index.html">Студія</a>
           </li>
-          <li class="list-item"><a class="list-link" href="#">Контакти</a></li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#">Контакти</a>
+          </li>
         </ul>
       </nav>
-      <ul class="contacts">
-        <li class="contact-item">
-          <a class="contact-link" href="mailto:info@devstudio.com">
-            info@devstudio.com
-          </a>
+      <ul class="header-contacts">
+        <li class="header-contacts-item">
+          <a class="header-contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
-        <li class="contact-item">
-          <a class="contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <li class="header-contacts-item">
+          <a class="header-contacts-link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
         </li>
       </ul>
     </header>
@@ -43,31 +51,31 @@
         <button class="hero-button" type="button">Замовити послугу</button>
       </section>
 
-      <section class="section-list">
-        <ul class="list">
-          <li class="section-item">
-            <h2 class="section-title">Увага до деталей</h2>
-            <p class="section-text">
+      <section class="benefits">
+        <ul class="benefits-list">
+          <li class="benefits-item">
+            <h2 class="benefits-title">Увага до деталей</h2>
+            <p class="benefits-text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li class="section-item">
-            <h2 class="section-title">Пунктуальність</h2>
-            <p class="section-text">
+          <li class="benefits-item">
+            <h2 class="benefits-title">Пунктуальність</h2>
+            <p class="benefits-text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li class="section-item">
-            <h2 class="section-title">Планування</h2>
-            <p class="section-text">
+          <li class="benefits-item">
+            <h2 class="benefits-title">Планування</h2>
+            <p class="benefits-text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="section-item">
-            <h2 class="section-title">Сучасні технології</h2>
-            <p class="section-text">
+          <li class="benefits-item">
+            <h2 class="benefits-title">Сучасні технології</h2>
+            <p class="benefits-text">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -81,7 +89,7 @@
           <li class="work-item">
             <img
               class="work-img"
-              src="./images_index/work/computer.png"
+              src="./src/images_index/work/computer.png"
               alt="Людина працює за комп'ютером"
               loading="lazy"
             />
@@ -89,7 +97,7 @@
           <li class="work-item">
             <img
               class="work-img"
-              src="./images_index/work/laptop.png"
+              src="./src/images_index/work/laptop.png"
               alt="Людина працює за ноутбуком"
               loading="lazy"
             />
@@ -97,7 +105,7 @@
           <li class="work-item">
             <img
               class="work-img"
-              src="./images_index/work/tablet.png"
+              src="./src/images_index/work/tablet.png"
               alt="Людина працює на планшеті"
               loading="lazy"
             />
@@ -110,58 +118,66 @@
         <ul class="team-list">
           <li class="team-item">
             <article class="team-article">
-              <div class="team-container">
+              <div class="teammate-photo">
                 <img
-                  class="team-img"
-                  src="./images_index/team/Igor.png"
+                  class="teammate-image"
+                  src="./src/images_index/team/Igor.png"
                   alt="Ігор Дем'яненко, Product Designer"
                   loading="lazy"
                 />
               </div>
-              <h3 class="team-member-title">Ігор Дем'яненко</h3>
-              <p class="team-text">Product Designer</p>
+              <div class="teammate-meta">
+                <h3 class="teammate-name">Ігор Дем'яненко</h3>
+                <p class="teammate-role">Product Designer</p>
+              </div>
             </article>
           </li>
           <li class="team-item">
             <article class="team-article">
-              <div class="team-container">
+              <div class="teammate-photo">
                 <img
-                  class="team-img"
-                  src="./images_index/team/Olga.png"
+                  class="teammate-image"
+                  src="./src/images_index/team/Olga.png"
                   alt="Ольга Рєпіна, Frontend Developer"
                   loading="lazy"
                 />
               </div>
-              <h3 class="team-member-title">Ольга Рєпіна</h3>
-              <p class="team-text">Frontend Developer</p>
+              <div class="teammate-meta">
+                <h3 class="teammate-name">Ольга Рєпіна</h3>
+                <p class="teammate-role">Frontend Developer</p>
+              </div>
             </article>
           </li>
           <li class="team-item">
             <article class="team-article">
-              <div class="team-container">
+              <div class="teammate-photo">
                 <img
-                  class="team-img"
-                  src="./images_index/team/Mykola.png"
+                  class="teammate-image"
+                  src="./src/images_index/team/Mykola.png"
                   alt="Микола Тарасов, Marketing"
                   loading="lazy"
                 />
               </div>
-              <h3 class="team-member-title">Микола Тарасов</h3>
-              <p class="team-text">Marketing</p>
+              <div class="teammate-meta">
+                <h3 class="teammate-name">Микола Тарасов</h3>
+                <p class="teammate-role">Marketing</p>
+              </div>
             </article>
           </li>
           <li class="team-item">
             <article class="team-article">
-              <div class="team-container">
+              <div class="teammate-photo">
                 <img
-                  class="team-img"
-                  src="./images_index/team/Mykhailo.png"
+                  class="teammate-image"
+                  src="./src/images_index/team/Mykhailo.png"
                   alt="Михайло Єрмаков, UI Designer"
                   loading="lazy"
                 />
               </div>
-              <h3 class="team-member-title">Михайло Єрмаков</h3>
-              <p class="team-text">UI Designer</p>
+              <div class="teammate-meta">
+                <h3 class="teammate-name">Михайло Єрмаков</h3>
+                <p class="teammate-role">UI Designer</p>
+              </div>
             </article>
           </li>
         </ul>
@@ -169,7 +185,9 @@
     </main>
 
     <footer class="footer">
-      <a class="footer-link" href="index.html">Web<span>Studio</span></a>
+      <a class="footer-link" href="index.html"
+        ><img src="./src/logo/WebStudio2.svg" alt=""
+      /></a>
       <address class="address">
         <p class="address-text">м. Київ, пр-т Лесі Українки, 26</p>
         <ul class="address-list">

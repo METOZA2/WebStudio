@@ -14,6 +14,8 @@ body {
   font-family: var(--primary-font);
   margin: 0;
   padding: 0;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* Header */
@@ -31,13 +33,24 @@ body {
 .header-nav-link {
   text-decoration: none;
   color: var(--primary-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .header-nav-link.active {
   color: var(--accent-color);
   text-decoration: none;
 }
-
+.header-contacts-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.header-contacts-link.active {
+  text-decoration: none;
+  color: var(--primary-color);
+}
 /* Hero */
 .hero {
   text-align: center;
@@ -45,22 +58,69 @@ body {
   color: var(--white);
   padding: 80px 20px;
 }
-
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 136%;
+}
 .hero-button {
   background-color: var(--accent-color);
   color: var(--white);
   border: none;
   padding: 12px 24px;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
 }
-
+/* benefits */
+.benefits-title {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.benefits-text {
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+/* work */
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+}
+/* team */
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+}
+.teammate-name {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+.teammate-role {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
 /* Portfolio */
 .portfolio-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-
+.portfolio-filter-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-family: var(--primary-font);
+}
 .portfolio-item {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -72,4 +132,14 @@ body {
   color: var(--white);
   text-align: center;
   padding: 40px;
+}
+.footer-address {
+  font-family: var(--primary-font);
+}
+.address-item-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-family: var(--primary-font);
 }
