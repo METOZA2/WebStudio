@@ -25,6 +25,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Header */
 .header {
   padding: 20px 50px;
@@ -43,7 +49,10 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-
+.header-contacts {
+  display: flex;
+  gap: 15px;
+}
 .header-nav-link.active {
   color: var(--accent-color);
   text-decoration: none;
@@ -72,6 +81,10 @@ body {
   letter-spacing: 0.06em;
   line-height: 136%;
 }
+.hero-title {
+  display: flex;
+  justify-content: center;
+}
 .hero-button {
   background-color: var(--accent-color);
   color: var(--white);
@@ -88,6 +101,10 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.benefits-list {
+  display: flex;
+  flex-direction: row;
+}
 .benefits-text {
   line-height: 171%;
   letter-spacing: 0.03em;
@@ -99,11 +116,23 @@ body {
   font-size: 36px;
   letter-spacing: 0.03em;
 }
+.work-list {
+  display: flex;
+  justify-content: space-around;
+}
 /* team */
 .team-title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+.teammate-image {
+  height: 260px;
+  width: 250px;
 }
 .teammate-name {
   font-weight: 500;
@@ -116,11 +145,17 @@ body {
   color: var(--secondary-color);
 }
 /* Portfolio */
+.portfolio-filter-list {
+  display: flex;
+
+  justify-content: space-between;
+}
 .portfolio-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
 .portfolio-filter-link {
   text-decoration: none;
   color: var(--primary-color);
@@ -137,8 +172,14 @@ body {
   font-family: var(--primary-font);
   background-color: var(--footer-bg);
   color: var(--white);
-  text-align: center;
+
   padding: 40px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
 }
 .footer-address {
   font-family: var(--primary-font);
