@@ -17,7 +17,14 @@ body {
   font-weight: 400;
   font-size: 14px;
 }
+.container {
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
 
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* Header */
 .header {
   padding: 20px 50px;
