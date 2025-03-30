@@ -25,6 +25,11 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -104,6 +109,18 @@ body {
 .benefits-list {
   display: flex;
   flex-direction: row;
+}
+.benefits-item:nth-child(1) {
+  background-image: url(./images_index/benefits/satellite.svg);
+}
+.benefits-item:nth-child(2) {
+  background-image: url(./images_index/benefits/clock.svg);
+}
+.benefits-item:nth-child(3) {
+  background-image: url(./images_index/benefits/laptop.svg);
+}
+.benefits-item:nth-child(4) {
+  background-image: url(./images_index/benefits/astronaut.svg);
 }
 .benefits-text {
   line-height: 171%;
