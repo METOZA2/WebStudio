@@ -322,3 +322,8 @@ img {
 .address-item-link:hover {
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.3);
 }
+
+.footer_svg {
+  height: 44px;
+  width: 44px;
+}
