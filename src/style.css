@@ -193,6 +193,23 @@ img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
 }
+.work-item {
+  position: relative;
+  overflow: hidden;
+}
+.work-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.work-item > .work-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  background-color: #2f303a;
+}
 /* team */
 .team {
   height: 708px;
